@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10 text-white text-lg bg-[#222] w-1/4">
+  <h1 class="text-3xl mb-5">Login Here</h1>
+  <form action="/auth/login" method="POST" class="flex flex-col gap-4">
+    <input type="email" name="email" placeholder="Email" class="p-2 rounded bg-[#222] text-white" required>
+    <input type="password" name="password" placeholder="Password" class="p-2 rounded bg-[#222] text-white" required>
+    <button type="submit" class="p-2 bg-blue-500 rounded text-white">Login</button>
+  </form>
+  <a href="/auth/signup" class="text-blue-500 underline mt-5 block">Don't have an account? Signup</a>
+</body>
+
+</html>
